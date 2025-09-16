@@ -1,0 +1,93 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Key Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {\textbf{GSM Pump Controller}} % Project
+    {} % Empty role
+    {} % Empty location
+    {} % Empty date
+    {
+      \begin{cvitems}
+        \item {Designed and implemented a pump controller system using Nuvoton M483 MCU with FreeRTOS.}
+        \item {Implemented voltage and current sensing, motor protections, and dry-run restart timers.}
+        \item {Integrated GSM functionalities including SMS, calls, FTP, DTMF, and network AT commands for reliable device-to-user communication.}
+        \item {Sent system status and fault codes to an MQTT server for mobile app monitoring and control.}
+      \end{cvitems}
+    }
+
+\cventry
+    {\textbf{Flow and Pressure Control System}} 
+    {} 
+    {} 
+    {} 
+    {
+      \begin{cvitems}
+        \item {Developed control system using SAM D21 MCU to interface with multiple sensors: 4-20mA pressure sensors, RS485 level sensors, float and door switches, pulse and RS485 flowmeters.}
+        \item {Controlled two solenoid coils to maintain target flow and pressure rates.}
+        \item {Used EERAM to store cumulative data, calibration factors, and setpoints.}
+        \item {Displayed parameters on a dot matrix display for real-time monitoring.}
+      \end{cvitems}
+    }
+
+\cventry
+    {\textbf{Oxygen Tank Level Monitoring System}} 
+    {} 
+    {} 
+    {} 
+    {
+      \begin{cvitems}
+        \item {Designed system to measure differential pressure from two sensors and convert readings to mmWc.}
+        \item {Implemented MQTT communication to send hourly tank data to a server.}
+        \item {Configured alerts to notify low oxygen levels.}
+      \end{cvitems}
+    }
+
+\cventry
+    {\textbf{LoRa Node for Remote Fluid Control}} 
+    {} 
+    {} 
+    {} 
+    {
+      \begin{cvitems}
+        \item {Developed LoRa-based control system to receive commands and operate solenoid coils remotely.}
+        \item {Provided feedback including acknowledgements, battery, and solar voltages.}
+        \item {Enabled efficient and reliable remote monitoring and control of fluid flow processes.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {\textbf{Edge-IO Data Acquisition and Modbus TCP Device}} 
+    {} 
+    {} 
+    {} 
+    {
+      \begin{cvitems}
+        \item {Designed an Edge-IO device to read ADC and digital inputs and transmit raw data over Modbus TCP.}
+        \item {Developed a Yocto-based application to receive Modbus TCP data and forward it via MQTT.}
+        \item {Implemented using Libmodbus, cJSON, and Paho MQTT libraries, with static compilation to minimize dependencies and simplify deployment.}
+      \end{cvitems}
+    }
+
+\cventry
+    {\textbf{STM32F4 RTOS Scheduler (Hobby Project)}} 
+    {} 
+    {} 
+    {} 
+    {
+      \begin{cvitems}
+        \item {Implemented a round-robin RTOS scheduler on STM32F4 to study context switching and task management.}
+        \item {Used FreeRTOS implementation as reference to understand and demonstrate task scheduling on ARM Cortex-M MCU.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
